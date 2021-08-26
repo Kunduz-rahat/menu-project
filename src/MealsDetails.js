@@ -10,7 +10,7 @@ const MealsDetails = () => {
   useEffect(() => {
     axios(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`)
       .then(({data}) => setMeal(data.meals[0]))
-  }, [])
+  }, [params.id])
   return (
     <div>
       <div className='info'>
