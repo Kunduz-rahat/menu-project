@@ -35,7 +35,7 @@ const MealDetails = () => {
           <div className='title'>{meal.strMeal}</div>
           <img src={meal.strMealThumb} alt="" className='img_meal'/>
           <div className='descreption_meal'>{meal.strInstructions}</div>
-          <iframe width="360" height="315" src={`https://www.youtube.com/embed/${youtube}/" title="YouTube video player`}
+          <iframe  title='yootube' width="360" height="315" src={`https://www.youtube.com/embed/${youtube}/" title="YouTube video player`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen></iframe>
