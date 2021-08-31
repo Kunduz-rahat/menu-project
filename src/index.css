@@ -5,10 +5,13 @@
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
 }
-header{
+header {
     max-width: 1440px;
     padding: 0 15px;
+
+
 }
+
 .row{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

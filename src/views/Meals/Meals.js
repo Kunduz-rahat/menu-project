@@ -1,6 +1,8 @@
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
-import {Link, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
+import MealsList from "../../componens/MealsList/MealsList";
+import CountriesList from "../../componens/CountriesList/CountriesList";
 
 
 const Meals = () => {
@@ -12,7 +14,7 @@ const Meals = () => {
     setSearch(e.target.value)
   }
   const handleClick = () => {
-    if (seacrh.trim()){
+    if (seacrh.trim()) {
       history.push(`/browse/${seacrh}`)
     }
   }
@@ -27,25 +29,8 @@ const Meals = () => {
         <input type="text" onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
         <button type="button" onClick={handleClick} className='form_search'>Search</button>
       </form>
-
-
-      <div className='row'>
-
-        {
-          meals.map(item => (
-              <div key={item.idMeal}>
-
-                <Link to={`/product/${item.idMeal}`} clasName='link'>
-                  <img src={item.strMealThumb} alt="" className='meals_img'/>
-                  <div>{item.strMeal}</div>
-                </Link>
-              </div>
-            )
-          )
-        }
-
-
-      </div>
+      <MealsList meals={meals}/>
+      {/*<CountriesList meals={meals}/>*/}
     </div>
   )
 }
