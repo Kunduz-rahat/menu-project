@@ -26,11 +26,11 @@ const Meals = () => {
     <div>
       <h1>Latest Meals</h1>
       <form className='form'>
-        <input type="text" onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
+        <input type="text" onKeyPress={event => {if(event.key === "Enter")handleClick()}} onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
         <button type="button" onClick={handleClick} className='form_search'>Search</button>
       </form>
       <MealsList meals={meals}/>
-      {/*<CountriesList meals={meals}/>*/}
+      <CountriesList meals={meals}/>
     </div>
   )
 }

@@ -37,7 +37,6 @@ const MealDetails = () => {
           <div className='descreption_meal'>{meal.strInstructions}</div>
          <YoutubeVideo  youtube={youtube}/>
         </div>
-
        <IngredientsList  ingredients={ingredients}/>
       </div>
     </div>

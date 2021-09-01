@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
         </svg>
       </a>
       <nav>
-        <a href="/" className='nav_link'>Home</a>
+        <NavLink to="/" className='nav_link'>Home</NavLink>
+
+
       </nav>
     </header>
   )
