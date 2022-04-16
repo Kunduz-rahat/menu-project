@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import {useHistory} from "react-router-dom";
-import MealsList from "../../componens/MealsList/MealsList";
-import CountriesList from "../../componens/CountriesList/CountriesList";
+import MealsList from "../../componens/MealsList";
+import CountriesList from "../../componens/CountriesList";
 
 
 const Meals = () => {
@@ -24,7 +24,7 @@ const Meals = () => {
   }, [])
   return (
     <div>
-      <h1>Latest Meals</h1>
+      <h1 className="text-7xl">Top Recipes of the day</h1>
       <form className='form'>
         <input type="text" onKeyPress={event => {if(event.key === "Enter")handleClick()}} onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
         <button type="button" onClick={handleClick} className='form_search'>Search</button>

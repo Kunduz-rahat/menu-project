@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import { useParams} from "react-router-dom"
-import MealsList from "../../componens/MealsList/MealsList";
+import MealsList from "../../componens/MealsList";
 
 
 const Countries = () => {

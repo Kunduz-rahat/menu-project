@@ -1,9 +1,8 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {useParams} from "react-router-dom";
-
-import IngredientsList from "../../componens/IngredientsList/IngredientsList";
-import YoutubeVideo from "../../componens/YoutubeVideo/YoutubeVideo";
+import YoutubeVideo from "../../componens/YoutubeVideo";
+import IngredientsList from "../../componens/IngredientsList";
 
 const MealDetails = () => {
 
@@ -37,7 +36,7 @@ const MealDetails = () => {
           <div className='descreption_meal'>{meal.strInstructions}</div>
          <YoutubeVideo  youtube={youtube}/>
         </div>
-       <IngredientsList  ingredients={ingredients}/>
+       <IngredientsList ingredients={ingredients}/>
       </div>
     </div>
   )

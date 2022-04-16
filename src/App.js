@@ -1,11 +1,12 @@
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import Meals from "./views/Meals/Meals";
-import MealDetails from "./views/MealDetails/MealDetails";
-import Browse from "./views/Browse/Browse";
-import Ingredients from "./views/Ingredients/Ingredients";
-import Countries from "./views/Country/Countries";
-import Header from "./views/Header/Header";
+import Meals from "./views/Meals";
+import MealDetails from "./views/MealDetails";
+import Browse from "./views/Browse";
+import Ingredients from "./views/Ingredients";
+import Countries from "./views/Country";
+import Header from "./views/Header";
+import Categories from "./views/Categories";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route  path='/browse/:name'> <Browse /></Route>
         <Route  path='/ingredient/:name'> <Ingredients /></Route>
         <Route  path='/country/:name'> <Countries /></Route>
+        <Route  path='/categories/:name'> <Categories/></Route>
       </main>
 
     </Router>

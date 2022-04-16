@@ -2,6 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 
 
+
 const Header = () => {
   return (
     <header className="header">
@@ -13,9 +14,9 @@ const Header = () => {
         </svg>
       </div>
       <nav>
-        <NavLink to="/" className='nav_link'>Home</NavLink>
-        <NavLink to="/c" className='nav_link'>Categories</NavLink>
-
+        <NavLink to="/" className='mx-10'>Home</NavLink>
+        <NavLink to="/categories" className='mx-10 '>Categories</NavLink>
+      
 
       </nav>
     </header>
