@@ -3,6 +3,7 @@ import axios from "axios";
 import {useHistory} from "react-router-dom";
 import MealsList from "../../componens/MealsList";
 import CountriesList from "../../componens/CountriesList";
+import CategoriesList from "../../componens/CategoriesList";
 
 
 const Meals = () => {
@@ -29,8 +30,10 @@ const Meals = () => {
         <input type="text" onKeyPress={event => {if(event.key === "Enter")handleClick()}} onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
         <button type="button" onClick={handleClick} className='form_search'>Search</button>
       </form>
-      <MealsList meals={meals}/>
       <CountriesList meals={meals}/>
+      <CategoriesList  meals={meals}/>
+      <MealsList meals={meals}/>
+     
     </div>
   )
 }

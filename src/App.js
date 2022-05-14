@@ -17,7 +17,7 @@ function App() {
         <Route  path='/browse/:name'> <Browse /></Route>
         <Route  path='/ingredient/:name'> <Ingredients /></Route>
         <Route  path='/country/:name'> <Countries /></Route>
-        <Route  path='/categories'> <Categories/></Route>
+        <Route  path='/categories/:name'> <Categories/></Route>
       </main>
 
     </Router>
