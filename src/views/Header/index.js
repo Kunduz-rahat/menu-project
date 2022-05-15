@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import logo from './cook-book.png'
+import logo from '../../assets/logo.jpg'
 
 
 
@@ -13,7 +13,7 @@ const Header = () => {
           <img src={logo} alt='' />
           <h2>Recipes</h2>
         </div>
-        <nav className="header__nav">
+        <nav className="">
           <NavLink to="/" className='mx-10'>Home</NavLink>
        
         </nav>
