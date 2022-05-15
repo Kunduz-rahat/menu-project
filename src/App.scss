@@ -14,7 +14,7 @@
 		 font-size: 80%;
 	 }
 	 @include mobile{
-		 font-size: 60%;
+		 font-size: 80%;
 	 }
  }
 
@@ -33,7 +33,7 @@
  }
 
  img{
-	 min-width: 100%;
+	 max-width: 100%;
  }
 
  .container{

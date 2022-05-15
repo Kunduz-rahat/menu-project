@@ -1,14 +1,14 @@
-@use '../../scss/' as *;
+@use '../../scss/'as *;
 
 
 .logo {
 	font-size: 2.5rem;
 	font-weight: 600;
-	@include flex(center, unset);
+	text-align: center;
 
 	img {
 		margin-right: 10px;
-		width: 50px;
+		width: 250px;
 
 		@include mobile {
 			width: 30px;
