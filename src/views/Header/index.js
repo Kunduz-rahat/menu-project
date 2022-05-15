@@ -11,9 +11,8 @@ const Header = () => {
       <div header__wrap container>
         <div className="logo">
           <img src={logo} alt='' />
-          <h2>Recipes</h2>
         </div>
-        <nav className="">
+        <nav className="header__nav">
           <NavLink to="/" className='mx-10'>Home</NavLink>
        
         </nav>

@@ -1,0 +1,40 @@
+@use './scss/' as *;
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+ html{
+	 font-size: 100%;
+	 @include tablet{
+		 font-size: 80%;
+	 }
+	 @include mobile{
+		 font-size: 60%;
+	 }
+ }
+
+ body{
+	 font-weight: 500;
+	 line-height: 1.5;
+	 color: $text-color;
+	 @include mobile{
+		 margin-bottom: 3rem;
+	 }
+ }
+ 
+ a{
+	 text-decoration: none;
+	 color: unset;
+ }
+
+ img{
+	 min-width: 100%;
+ }
+
+ .container{
+	 max-width: 1440px;
+	 margin: auto;
+ }
