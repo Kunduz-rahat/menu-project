@@ -7,6 +7,7 @@ import Ingredients from "./views/Ingredients";
 import Countries from "./views/Country";
 import Header from "./views/Header";
 import Categories from "./views/Categories";
+import './App.scss'
 function App() {
   return (
     <Router>

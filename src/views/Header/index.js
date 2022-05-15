@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-import logo from '../../assets/logo.jpg'
+import logo from '../../assets/logo.jpg';
+import './index.scss';
 
 
 
 const Header = () => {
   return (
     <header className="header">
-      <div header__wrap container>
+      <div className="header__wrap container" >
         <div className="logo">
           <img src={logo} alt='' />
         </div>
