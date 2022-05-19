@@ -11,7 +11,7 @@
 		width: 100px;
 
 		@include mobile {
-			width: 30px;
+			width: 100px;
 			margin-right: 0;
 		}
 	}
@@ -23,6 +23,7 @@
 	 right: 0;
 	 width: 100%;
 	 z-index: 99;
+	 background-color: white;
 
 	 &__nav{
 		 font-size: 1.5rem;
