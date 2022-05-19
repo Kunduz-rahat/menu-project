@@ -9,6 +9,7 @@ import Countries from "./views/Country";
 import Categories from "./views/Categories";
 import './App.scss'
 import Layout from "./componens/Layout";
+import NotFound from "./views/NotFound";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/ingredient/:name'> <Ingredients /></Route>
         <Route path='/country/:name'> <Countries /></Route>
         <Route path='/categories/:name'> <Categories /></Route>
+        <Route path='*'><NotFound/></Route>
       </Layout>
 
 

@@ -2,51 +2,72 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 
 }
- html{
-	 font-size: 100%;
-	 @include tablet{
-		 font-size: 80%;
-	 }
-	 @include mobile{
-		 font-size: 80%;
-	 }
- }
 
- body{
-	 font-weight: 500;
-	 line-height: 1.5;
-	 color: $text-color;
-	 @include mobile{
-		 margin-bottom: 3rem;
-	 }
- }
- 
- a{
-	 text-decoration: none;
-	 color: unset;
- }
+html {
+	font-size: 100%;
 
- img{
-	 max-width: 100%;
- }
+	@include tablet {
+		font-size: 80%;
+	}
 
- .container{
-	 max-width: 1440px;
-	 margin: auto;
-	 padding: 0 3rem ;
- }
- .recipes_title{
-	 margin-top: 8rem;
-	 text-align: center;
- }
- .link{
-	 display: flex;
-	 justify-content: space-around;
-	 
- }
+	@include mobile {
+		font-size: 80%;
+	}
+}
+
+body {
+	font-weight: 500;
+	line-height: 1.5;
+	color: $text-color;
+
+	@include mobile {
+		margin-bottom: 3rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1440px;
+	margin: auto;
+	padding: 0 3rem;
+}
+
+.recipes_title {
+	margin-top: 8rem;
+	text-align: center;
+}
+
+.link {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.column {
+	flex: 5%;
+	padding: 15px;
+}
+
+.meal_img {
+	max-width: 500px;
+}
