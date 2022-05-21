@@ -21,7 +21,7 @@ function App() {
         <Route path='/ingredient/:name'> <Ingredients /></Route>
         <Route path='/country/:name'> <Countries /></Route>
         <Route path='/categories/:name'> <Categories /></Route>
-        <Route path='*'><NotFound/></Route>
+        <Route path='*/'><NotFound/></Route>
       </Layout>
 
 
