@@ -8,21 +8,24 @@ import Countries from "./views/Country";
 
 import Categories from "./views/Categories";
 import './App.scss'
-import Layout from "./componens/Layout";
+
 import NotFound from "./views/NotFound";
+import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 function App() {
   return (
     <Router>
+      <Switch>
+  
+          <Route exact path='/'> <Meals /></Route>
+          <Route path='/product/:id'> <MealDetails /></Route>
+          <Route path='/browse/:name'> <Browse /></Route>
+          <Route path='/ingredient/:name'> <Ingredients /></Route>
+          <Route path='/country/:name'> <Countries /></Route>
+          <Route path='/categories/:name'> <Categories /></Route>
+          <Route path='*'><NotFound /></Route>
+      
+      </Switch>
 
-      <Layout>
-        <Route exact path='/'> <Meals /></Route>
-        <Route path='/product/:id'> <MealDetails /></Route>
-        <Route path='/browse/:name'> <Browse /></Route>
-        <Route path='/ingredient/:name'> <Ingredients /></Route>
-        <Route path='/country/:name'> <Countries /></Route>
-        <Route path='/categories/:name'> <Categories /></Route>
-        <Route path='*/'><NotFound/></Route>
-      </Layout>
 
 
 
