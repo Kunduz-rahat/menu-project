@@ -3,7 +3,8 @@ import axios from "axios";
 import {useParams} from "react-router-dom";
 import YoutubeVideo from "../../componens/YoutubeVideo";
 import IngredientsList from "../../componens/IngredientsList";
-
+import  Layout  from "../../componens/Layout";
+import './index.scss'
 const MealDetails = () => {
 
   const [meal, setMeal] = useState({})
@@ -28,17 +29,22 @@ const MealDetails = () => {
   }, [id])
 
   return (
-    <div>
-      <div className='info'>
-        <div>
-          <div className='title'>{meal.strMeal}</div>
+    <Layout>
+      <div className='container'>
+      <div className="meal_row">
+      <div className="meal">
+          <h2 className='meals_title'>{meal.strMeal}</h2>
           <img src={meal.strMealThumb} alt="" className='img_meal'/>
           <div className='descreption_meal'>{meal.strInstructions}</div>
          <YoutubeVideo  youtube={youtube}/>
         </div>
        <IngredientsList ingredients={ingredients}/>
       </div>
-    </div>
+       
+      </div>
+
+     
+    </Layout>
   )
 
 }

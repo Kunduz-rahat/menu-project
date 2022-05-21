@@ -3,6 +3,8 @@ import axios from "axios";
 import {useParams} from 'react-router-dom'
 
 import MealsList from "../../componens/MealsList";
+import './index.scss'
+import Layout from "../../componens/Layout";
 
 const Ingredients = () => {
   const params = useParams()
@@ -13,16 +15,20 @@ const Ingredients = () => {
   }, [params.name])
 
   return (
-    <div>
-      <div className='info'>
+    <Layout>
+  <div className="container">
+      <div className='ingredient_info'>
         <div className='ingredient_card'>
-          <div className='ing_title'>{params.name}</div>
+          <h2 className='ingredient_title'>{params.name}</h2>
           <img src={`https://www.themealdb.com/images/ingredients/${params.name}.png`} className='img_meal' alt=""/>
+          <MealsList meals={meal}/>
         </div>
-        <MealsList meals={meal}/>
+      
       </div>
 
     </div>
+    </Layout>
+  
   )
 }
 
