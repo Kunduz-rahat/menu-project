@@ -41,9 +41,7 @@ const Meals = () => {
               Welcome to
             </span>
             <span className="flex gap-x-1 text-lime-500">
-              Free
-            
-              Meals
+             Recipes
             </span>
           </h1>
         </div>
