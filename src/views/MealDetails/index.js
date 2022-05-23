@@ -38,10 +38,13 @@ const MealDetails = () => {
             <h2 className='text-3xl sm:text-4xl font-bold mt-6 mb-6 dark:text-slate-200'>{meal.strMeal}</h2>
             <img src={meal.strMealThumb} alt="" className='w-full rounded' />
             <div className='text-base leading-relaxed dark:text-slate-300'>{meal.strInstructions}</div>
+            <div className="mb-10 mt-10">
             <YoutubeVideo youtube={youtube} />
+            </div>
+          
              
           </div>
-          <div className="w-full md:w-7/12">
+          <div className="w-full md:w-7/12 mb-4">
           <IngredientsList ingredients={ingredients} />
           </div>
         
