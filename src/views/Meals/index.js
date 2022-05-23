@@ -35,6 +35,7 @@ const Meals = () => {
   return (
     <Layout>
       <div className="container">
+      
         <h1 className="recipes_title">Top Recipes of the day</h1>
         <MealsList meals={meals} />
         <CountriesList meals={meals} />

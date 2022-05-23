@@ -44,6 +44,12 @@ img {
 	max-width: 1440px;
 	margin: auto;
 	padding: 0 3rem;
+	@include mobile{
+		max-width: 450px;
+	}
+	@include tablet{
+		max-width: 1000px;
+	}
 }
 
 .recipes_title {

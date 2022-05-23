@@ -18,19 +18,20 @@ const Header = () => {
     }
   }
   return (
-    <header className="header">
+    <header className="header container">
       <div className="header__wrap" >
         <div className="logo">
           <img src={logo} alt='' />
          
         </div>
         <nav className="header__nav">
-            <NavLink to="/" className='header__nav item'>Home</NavLink>
+            <NavLink to="/" className='text-xl font-bold underline'>Home</NavLink>
           </nav>
           <form className='form'>
         <input type="text" onKeyPress={event => {if(event.key === "Enter")handleClick()}} onChange={handleSeacrh} placeholder='Search...' className='form_search'/>
-        <button type="button" onClick={handleClick} className='form_search'>Search</button>
+        <button type="button" onClick={handleClick} className='border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline'>Search</button>
       </form>
+      
       </div>
 
 

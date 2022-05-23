@@ -12,13 +12,16 @@ const MealDetails = () => {
   const {id} = useParams()
   const [youtube, setYoutube] =useState('')
 
+
   useEffect(() => {
     axios(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
       .then(({data}) => {
         const obj = data.meals[0]
+
         const ings = Array(20).fill(0).reduce((acc, item, idx) => {
           const ingredient = obj[`strIngredient${idx + 1}`]
             return ingredient ? [...acc, ingredient] :acc
+
         }, [])
         const str = obj.strYoutube.slice(obj.strYoutube.indexOf('v=')+2, obj.strYoutube.length)
         console.log(str)
