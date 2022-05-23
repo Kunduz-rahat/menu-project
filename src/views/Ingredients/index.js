@@ -3,7 +3,7 @@ import axios from "axios";
 import {useParams} from 'react-router-dom'
 
 import MealsList from "../../componens/MealsList";
-import './index.scss'
+
 import Layout from "../../componens/Layout";
 
 const Ingredients = () => {
