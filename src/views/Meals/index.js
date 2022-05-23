@@ -13,8 +13,8 @@ const Meals = () => {
   const [meals, setMeals] = useState([])
 
   const history = useHistory();
-  const [loading, setLoading]=useState(true);
-  const [notFound, setNotFound]= useState(false)
+  const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false)
 
 
 
@@ -23,24 +23,36 @@ const Meals = () => {
       .then(({ data }) => {
         setMeals(data.meals)
         setLoading(false)
-      }).catch(()=>setNotFound(true))
-      .finally(()=>setLoading(false))
+      }).catch(() => setNotFound(true))
+      .finally(() => setLoading(false))
   }, [])
-  if(loading){
-    return <Spinner/>
+  if (loading) {
+    return <Spinner />
   }
-  if(notFound){
-    return <NotFound/>
+  if (notFound) {
+    return <NotFound />
   }
   return (
     <Layout>
-      <div className="container">
-      
-        <h1 className="recipes_title">Top Recipes of the day</h1>
-        <MealsList meals={meals} />
-        <CountriesList meals={meals} />
-        <CategoriesList meals={meals} />
-      </div>
+      <section  className="pt-16 mx-auto">
+        <div className="container">
+          <h1 className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3 text-4xl font-bold md:text-5xl md:leading-tight md:font-extrabold">
+          <span className="text-amber-500 dark:text-slate-300 ">
+              Welcome to
+            </span>
+            <span className="flex gap-x-1 text-lime-500">
+              Free
+            
+              Meals
+            </span>
+          </h1>
+        </div>
+      </section>
+
+      <MealsList meals={meals} />
+      <CountriesList meals={meals} />
+      <CategoriesList meals={meals} />
+
     </Layout>
 
   )
