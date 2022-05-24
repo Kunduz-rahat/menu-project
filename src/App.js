@@ -7,7 +7,7 @@ import Ingredients from "./views/Ingredients";
 import Countries from "./views/Country";
 
 import Categories from "./views/Categories";
-import './App.scss'
+
 
 import NotFound from "./views/NotFound";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";

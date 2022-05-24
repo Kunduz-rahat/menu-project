@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 import axios from "axios";
 import { useParams} from "react-router-dom"
 import MealsList from '../../componens/MealsList';
+import Layout from '../../componens/Layout';
 
 
 
@@ -16,9 +17,12 @@ const Categories = () => {
     .then(({data}) => setMeals(data.meals))
 
   return (
-    <div>
+    <Layout>
+  <div className='container'>
      <MealsList meals={meals}/>
     </div>
+    </Layout>
+  
   )
 };
 

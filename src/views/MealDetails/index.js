@@ -32,7 +32,7 @@ const MealDetails = () => {
 
   return (
     <Layout>
-      <div className='container'>
+      <div className='container pl-10'>
         <div className="flex flex-wrap">
           <div className="w-full mb-7 md:w-5/12 md:pr-10 sm:mb-0">
             <h2 className='text-3xl sm:text-4xl font-bold mt-6 mb-6 dark:text-slate-200'>{meal.strMeal}</h2>

@@ -34,22 +34,27 @@ const Meals = () => {
   }
   return (
     <Layout>
-      <section  className="pt-16 mx-auto">
+      <section className="pt-16 mx-auto">
         <div className="container">
           <h1 className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3 text-4xl font-bold md:text-5xl md:leading-tight md:font-extrabold">
-          <span className="text-amber-500 dark:text-slate-300 ">
+            <span className="text-amber-500 dark:text-slate-300 ">
               Welcome to
             </span>
             <span className="flex gap-x-1 text-lime-500">
-             Recipes
+              Recipes
             </span>
           </h1>
         </div>
       </section>
-
       <MealsList meals={meals} />
-      <CountriesList meals={meals} />
-      <CategoriesList meals={meals} />
+      <section pt-16 mx-auto>
+        <div className="container p-10">
+          <CountriesList meals={meals} />
+          <CategoriesList meals={meals} />
+        </div>
+      </section>
+
+
 
     </Layout>
 
