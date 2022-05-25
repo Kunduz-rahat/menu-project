@@ -47,7 +47,7 @@ const Meals = () => {
         </div>
       </section>
       <MealsList meals={meals} />
-      <section pt-16 mx-auto>
+      <section  mx-auto>
         <div className="container p-10">
           <CountriesList meals={meals} />
           <CategoriesList meals={meals} />

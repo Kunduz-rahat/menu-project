@@ -17,15 +17,13 @@ const Ingredients = () => {
   return (
     <Layout>
   <div className="container px-5 py-4 mx-auto">
-      <div className='items-center justify-center'>
-        <div className=' text-center text-xl bg-gray-100 p-4 rounded-xl transition hover:bg-lime-300 hover:drop-shadow-md hover:-translate-y-1 dark:bg-slate-800 dark:hover:bg-slate-700'>
+      <div className='w-full mb-7 md:w-5/12 md:pr-10 sm:mb-0 '>
+        <div className=' flex flex-col gap-y-1 text-center text-xl bg-gray-100 p-4 rounded-xl transition hover:bg-lime-300 hover:drop-shadow-md hover:-translate-y-1 dark:bg-slate-800 dark:hover:bg-slate-700'>
           <h2 className='text-3xl font-bold mb-5 mt-10 dark:text-slate-200'>{params.name}</h2>
-          <img src={`https://www.themealdb.com/images/ingredients/${params.name}.png`} className='object-cover h-48 w-96' alt=""/>
-         
+          <img src={`https://www.themealdb.com/images/ingredients/${params.name}.png`} className='w-full' alt=""/>
         </div>
-        <MealsList meals={meal}/>
       </div>
-   
+      <MealsList meals={meal}/>
     </div>
     </Layout>
   
