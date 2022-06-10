@@ -1,22 +1,24 @@
 import React from 'react';
+
 import { Link } from "react-router-dom";
 
 const CategoriesList = ({ meals }) => {
+
   return (
-    <div className='container flex justify-around py-8 mx-auto bg-white  '>
-      <div className='hidden w-full md:block md:w-auto" id="mobile-menu mx-auto'>
-        <div className='space-x-8'>
+    <div className='container '>
+      < div className='flex flex-wrap justify-center'>
+        
           {
             meals.map(item => (
-              <div className='m-auto'  key={item.idCategory} >
+              <div className='flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-blue-700 bg-blue-100 border border-blue-300'  key={item.idCategory} >
                 <Link to={`/categories/${item.strCategory}`} className='link'>
-                  <a className='block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'>{item.strCategory}</a>
+                  <button className='text-xs font-normal leading-none max-w-full flex-initial'>{item.strCategory}</button>
                 </Link>
               </div>
             )
             )
           }
-        </div>
+        
 
 
       </div>

@@ -3,17 +3,26 @@ import { Link } from "react-router-dom";
 
 const CountriesList = ({ meals }) => {
   return (
-    <div className='container'>
-      <div className='flex '>
-        {
-          meals.map(item =>
-            <div className="m-auto" >
-              <Link  to={`/country/${item.strArea}`}>
-              <button className="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-500 text-blue-500 text-lg rounded-lg hover:bg-blue-500 hover:text-gray-100 focus:border-4 focus:border-blue-300"> {item.strArea}</button>
-             
-              </Link>
-            </div>)
-        }
+    <div className=' container '>
+     
+       
+          <div className="flex flex-wrap justify-center mt-2">
+            {
+              meals.map(item =>
+
+                <div className="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-blue-700 bg-blue-100 border border-blue-300">
+                  <Link to={`/country/${item.strArea}`}>
+                    <button className="text-xs font-normal leading-none max-w-full flex-initial"> {item.strArea}</button>
+
+                  </Link>
+                </div>
+
+              )
+            }
+          
+
+      
+
       </div>
 
     </div>

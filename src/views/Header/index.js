@@ -21,7 +21,7 @@ const Header = () => {
     <header className="bg-yellow-300 border-b border-transparent py-4 dark:bg-slate-900 dark:border-b-slate-300/10 mx-auto">
       <div className="container flex flex-wrap items-center  justify-center" >
 
-        <NavLink to="/" className='font-medium text-2xl tracking-wide text-slate-700 transition-colors duration-200 py-2 px-3 rounded hover:bg-yellow-400 hover:text-white focus:bg-yellow-500 focus:text-white dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-slate-700/50 dark:focus:bg-slate-700 dark:focus:text-slate-200'>
+        <NavLink to="/" className='ml-10 font-medium text-2xl tracking-wide text-slate-700 transition-colors duration-200 py-2 px-3 rounded hover:bg-yellow-400 hover:text-white focus:bg-yellow-500 focus:text-white dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-slate-700/50 dark:focus:bg-slate-700 dark:focus:text-slate-200'>
           Home
         </NavLink>
 

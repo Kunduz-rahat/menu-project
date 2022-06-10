@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Layout from '../../componens/Layout';
 
 
 const NotFound = () => {
 	return (
-	  <div className="grid place-items-center min-h-full py-12">
+		<Layout>
+	  <div className="grid place-items-center p-10 min-h-full py-12">
 		 <div className="lg:flex">
 			<div className="flex flex-col items-center justify-center">
 			  <h1 className="font-bold text-blue-600 text-8xl sm:text-9xl">404</h1>
@@ -23,6 +25,8 @@ const NotFound = () => {
 			</div>
 		 </div>
 	  </div>
+		</Layout>
+
 	)
  }
 
