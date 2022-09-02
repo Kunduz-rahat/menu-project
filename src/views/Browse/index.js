@@ -8,9 +8,6 @@ import Layout from "../../componens/Layout";
 const Browse = () => {
   const [searchMeals, setSearchMeals] = useState([])
   const [error, setError] = useState('')
-  const [seacrh, setSearch] = useState('')
-  const [loading, setLoading]= useState(true)
-  const [notFound, setNotFound] = useState(false)
 
   const params = useParams()
   useEffect(() => {
@@ -21,9 +18,11 @@ const Browse = () => {
   }, [params.name])
   return (
     <Layout>
-      {!error.length ? <MealsList meals={searchMeals} /> : error}
-
+{!error.length ? <MealsList meals={searchMeals} /> : error}
     </Layout>
+      
+
+  
   )
 }
 

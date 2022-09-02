@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+
 import MealsList from "../../componens/MealsList";
 import CountriesList from "../../componens/CountriesList";
 import CategoriesList from "../../componens/CategoriesList";
@@ -11,8 +11,6 @@ import NotFound from "../NotFound";
 
 const Meals = () => {
   const [meals, setMeals] = useState([])
-
-  const history = useHistory();
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false)
 
@@ -47,8 +45,8 @@ const Meals = () => {
         </div>
       </section>
       <MealsList meals={meals} />
-      <section  mx-auto>
-        <div className="container p-10">
+      <section >
+        <div className="container">
           <CountriesList meals={meals} />
           <CategoriesList meals={meals} />
         </div>
